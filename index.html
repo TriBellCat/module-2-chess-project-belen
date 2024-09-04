@@ -13,36 +13,33 @@
     <script src="https://unpkg.com/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.js"
         integrity="sha384-8Vi8VHwn3vjQ9eUHUxex3JSN/NFqUg3QbPyX8kWyb93+8AC/pPWTzj+nHtbC5bxD"
         crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.10.2/chess.min.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div id="myBoard" style="width: 800px"></div>
-    
-    <br>
+    <div class="container">
 
-    <button id="reset-button">Reset Game</button>
-
-    <br>
-
-    <label>Status:</label>
-    <div id="status"></div>
-    <label>FEN:</label>
-    <div id="fen"></div>
-    <label>PGN:</label>
-    <div id="pgn"></div>
-    
-    <br>
-
-    <div><b>Chess Pieces Captured</b></div>
-    <label>White (Player) </label>
-    <div id = "player-taken"></div>
-    <label>Black (AI) </label>
-    <div id = "ai-taken"></div>
-
+        <div id="myBoard" style="width: 800px"></div>
+        <br>
+        <div class="content">
+            <button id="reset-button">Reset Game</button>
+            <br>
+            <label>Status:</label>
+            <div id="status"></div>
+            <label>FEN:</label>
+            <div id="fen"></div>
+            <label>PGN:</label>
+            <div id="pgn"></div>
+            <br>
+            <div><b>Chess Pieces Captured</b></div>
+            <label>White (Player) </label>
+            <div id = "player-taken"></div>
+            <label>Black (AI) </label>
+            <div id = "ai-taken"></div>
+        </div>
+    </div>
+    <script src="lib/chess.js"></script>
     <script src="index.js"></script>
-
 </body>
 
 </html>

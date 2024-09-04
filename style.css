@@ -1,0 +1,73 @@
+/* 
+    General body styling 
+*/
+body {
+    font-family: 'Georgia', serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+/* 
+    Chessboard container 
+*/
+.container {
+    display: flex;
+    align-items: flex-start; 
+}
+
+#myBoard {
+    flex: 0 0 auto; 
+    width: 200px; 
+}
+
+.content {
+    flex-grow: 1; 
+}
+
+/* 
+    Button styling 
+*/
+button {
+    background-color: #6666FF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 2px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #B3B3FF;
+}
+
+/* 
+    Status and information display 
+*/
+
+#status, #fen, #pgn, #player-taken, #ai-taken {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+}
+
+/* 
+    Captured pieces display 
+*/
+
+#player-taken, #ai-taken {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+#player-taken img, #ai-taken img {
+    width: 50px;
+    height: 50px;
+    margin-right: 5px;
+}
